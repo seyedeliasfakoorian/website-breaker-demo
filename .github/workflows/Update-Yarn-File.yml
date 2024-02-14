@@ -15,7 +15,6 @@ jobs:
 
       - name: 🔖 Update Dependency's
         run: |
-          npm update --force
           yarn update
 
       - name: Commit and Push
