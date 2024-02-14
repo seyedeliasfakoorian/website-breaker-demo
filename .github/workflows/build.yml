@@ -13,5 +13,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Update yarn.lock
-        uses: threeal/yarn-install-action@v1.0.0
+      - run: yarn install
+      - name: Create Pull Request
+        id: cpr
+        uses: ./
+        with:
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          title: 🔖 Update yarn.lock
+          branch: update-yarn-lock
