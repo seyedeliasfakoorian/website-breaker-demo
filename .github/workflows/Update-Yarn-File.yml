@@ -1,0 +1,25 @@
+name: Update Yarn File
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository Code
+        uses: actions/checkout@v2
+
+      - name: 🔖 Update Dependency's
+        run: |
+          npm update --force
+          yarn update
+
+      - name: Commit and Push
+        run: |
+          git add .
+          git commit -m "🔖 Update Dependency's"
+          git push
