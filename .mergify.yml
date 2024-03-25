@@ -7,7 +7,3 @@ pull_request_rules:
     actions:
       merge:
         method: merge
-        # Specify the list of users whose pull requests should be automatically merged
-        # Replace "seyedeliasfakoorian" and "renovate[bot]" with actual GitHub usernames
-        # You can add more usernames if needed
-        author: ["seyedeliasfakoorian", "renovate[bot]"]
