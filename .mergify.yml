@@ -1,9 +1,13 @@
 pull_request_rules:
-    - name: Merge all pull requests
-      conditions:
-        - or:
-            - files=package.json
-            - files=package-lock.json
-      actions:
-         merge:
-           method: merge
+  - name: Merge pull requests from specific users
+    conditions:
+      - or:
+          - files=package.json
+          - files=package-lock.json
+    actions:
+      merge:
+        method: merge
+        # Specify the list of users whose pull requests should be automatically merged
+        # Replace "seyedeliasfakoorian" and "renovate[bot]" with actual GitHub usernames
+        # You can add more usernames if needed
+        author: ["seyedeliasfakoorian", "renovate[bot]"]
