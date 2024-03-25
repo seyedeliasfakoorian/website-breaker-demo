@@ -4,7 +4,6 @@ pull_request_rules:
         - or:
             - files=package.json
             - files=package-lock.json
-            - files=yarn.lock
       actions:
          merge:
            method: merge
