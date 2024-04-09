@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - new-page
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install -g create-react-app
+
+      - name: Run Create React App
+        run: |
+          npx create-react-app website-breaker-demo
+          git config user.name seyedeliasfakoorian
+          git config user.email 98291494+seyedeliasfakoorian@users.noreply.github.com
+          git add .
+          git commit -m "New template"
+          git push origin new-page
