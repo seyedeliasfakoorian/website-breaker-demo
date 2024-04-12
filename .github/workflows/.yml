@@ -1,0 +1,19 @@
+on:
+  push:
+    branches: [ "new-page" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - run: npm uninstall emailjs-com && npm install web-vitals
+    - name: Commit and Push
+      run: |
+        git config user.name seyedeliasfakoorian
+        git config user.email 98291494+seyedeliasfakoorian@users.noreply.github.com
+        git add .
+        git commit -m "Add and Remove deps"
+        git push origin new-page
