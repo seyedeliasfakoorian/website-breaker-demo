@@ -12,7 +12,6 @@ import JsonData from "./data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { BreakButton } from "./components/breakButton";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
