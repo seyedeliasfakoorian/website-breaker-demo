@@ -26,17 +26,16 @@ const App = () => {
 
   return (
     <div>
-      <BreakButton></BreakButton>
-
+      <BreakButton />
       <Navigation />
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
-      {/* <Services data={landingPageData.Services} /> */}
+      <Services data={landingPageData.Services} />
       {/* <Gallery data={landingPageData.Gallery} /> */}
       <Testimonials data={landingPageData.Testimonials} />
       {/* <Team data={landingPageData.Team} /> */}
-      {/* <Contact data={landingPageData.Contact} /> */}
+      <Contact data={landingPageData.Contact} />
     </div>
   );
 };
