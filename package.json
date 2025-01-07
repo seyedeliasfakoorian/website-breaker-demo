@@ -2,7 +2,7 @@
   "name": "website-breaker-demo",
   "private": true,
   "dependencies": {
-    "@oc-2/website-breaker": "^1.0.4",
+    "@oc-2/website-breaker": "^1.0.5",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.0.0",
@@ -22,7 +22,11 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
