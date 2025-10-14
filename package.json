@@ -2,7 +2,7 @@
   "name": "website-breaker-demo",
   "private": true,
   "dependencies": {
-    "@oc-2/website-breaker": "^1.0.5",
+    "@oc-2/website-breaker": "^2.0.0",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.0.0",
